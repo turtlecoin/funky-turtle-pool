@@ -1,6 +1,11 @@
 # Why node:9 and not node:10? Because (a) v8 is LTS, so more likely to be stable, and (b) "npm update" on node:10 breaks on Docker on Linux (but not on OSX, oddly)
 FROM node:9-slim
 
+# BUILD_DATE and VCS_REF are immaterial, since this is a 2-stage build, but our build
+# hook won't work unless we specify the args
+ARG BUILD_DATE
+ARG VCS_REF
+
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs-legacy npm git libboost1.55-all libssl-dev \
   && rm -rf /var/lib/apt/lists/* 
