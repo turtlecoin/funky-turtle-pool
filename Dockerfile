@@ -6,6 +6,12 @@ FROM node:9-slim
 ARG BUILD_DATE
 ARG VCS_REF
 
+# Good docker practice, plus we get microbadger badges
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-url="https://github.com/funkypenguin/cryptonote-nodejs-pool.git" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.schema-version="2.2-r1"
+
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs-legacy npm git libboost1.55-all libssl-dev \
   && rm -rf /var/lib/apt/lists/* 
