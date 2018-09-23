@@ -1,8 +1,7 @@
 # Why node:9 and not node:10? Because (a) v8 is LTS, so more likely to be stable, and (b) "npm update" on node:10 breaks on Docker on Linux (but not on OSX, oddly)
 FROM node:9-slim
 
-# BUILD_DATE and VCS_REF are immaterial, since this is a 2-stage build, but our build
-# hook won't work unless we specify the args
+# Now we DO need these, for the auto-labeling of the image
 ARG BUILD_DATE
 ARG VCS_REF
 
