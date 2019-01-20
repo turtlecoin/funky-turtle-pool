@@ -7,9 +7,9 @@
     "coinDecimalPlaces": 2,
     "coinDifficultyTarget": 30,
 
-    "daemonType": "bytecoin",
-    "cnAlgorithm": "cryptonight_light",
-    "cnVariant": 1,
+    "daemonType": "turtlecoin",
+    "cnAlgorithm": "cryptonight-turtle-light",
+    "cnVariant": 2,
     "cnBlobType": 2,
 
     "logging": {
