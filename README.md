@@ -9,7 +9,7 @@
 
 # Contents
 
-1. [What is funkypenguin/oauth2_proxy?](#what-is-funkypenguin-crypto-nodejs-pool)
+1. [What is funkypenguin/crypto-nodejs-pool?](#what-is-funkypenguin-crypto-nodejs-pool)
 2. [Why should I use this?](#why-should-i-use-this)
 3. [How do I use it?](#how-do-i-use-this)
 4. [CHANGELOG](#changelog)
@@ -31,14 +31,17 @@ Got more details at:
 
 # What is funkypenguin/cryptonote-nodejs-pool ?
 
+This is a nodejs-based mining pool package for cryptonote coins, forked from https://github.com/dvandal/cryptonote-nodejs-pool
 
 # Why should I use this?
 
+You want to run a Turtlecoin pool, for one thing. This repo includes support for turtlecoin oddities, like RPC password on wallet, and the new turtlcoin-lite algorithm.
 
 # How do I use this?
 
 # CHANGELOG
 
+* 20 Jan 2018 - Updated for CN-Turtlecoin-lite
 ---
 
 # Upstream README
