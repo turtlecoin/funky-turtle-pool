@@ -54,7 +54,7 @@
                 "port": 7777,
                 "difficulty": 500000,
                 "desc": "Cloud-mining / NiceHash"
-            }
+            },
             {
                 "port": 8888,
                 "difficulty": 25000,
