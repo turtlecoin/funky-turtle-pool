@@ -1,8 +1,8 @@
 var api = "http://poolhost:8117";
 
-var email = "support@poolhost.com";
-var telegram = "https://t.me/YourPool";
-var discord = "https://discordapp.com/invite/YourPool";
+var email = "lab.zdos@protonmail.com";
+var telegram = "https://t.me/Your";
+var discord = "https://discordapp.com/invite/CryptoRide";
 
 var marketCurrencies = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR", "{symbol}-CAD"];
 
